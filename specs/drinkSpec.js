@@ -35,7 +35,10 @@ describe("My whatCanIDrink function", function(){
       expect(result).toBe("Drink Whisky");
     });
 
-
+    it("should be unable to return drink when called as whatCanIDrink(140)", function() {
+      var result = whatCanIDrink(140)
+      expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
+    });
 
   });
 
